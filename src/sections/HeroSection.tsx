@@ -1,5 +1,6 @@
 import { FadeInView } from '../components/FadeInView'
 import { FloatingPetals } from '../components/FloatingPetals'
+import { InvitationCard } from '../components/InvitationCard'
 import { SafeImage } from '../components/SafeImage'
 import { Sparkles } from '../components/FloatingHearts'
 import { COUPLE, HERO_BG } from '../constants'
@@ -34,29 +35,17 @@ export function HeroSection() {
 
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <FadeInView delay={0.1}>
-          <p className="font-calligraphy text-4xl text-maroon sm:text-5xl md:text-6xl">
-            Sri Murugan Thunai
-          </p>
-        </FadeInView>
-
-        <FadeInView delay={0.2}>
           <h1
             id="hero-heading"
-            className="mt-4 font-heading text-2xl font-bold tracking-wide text-maroon sm:text-3xl md:text-4xl"
+            className="font-heading text-2xl font-bold tracking-wide text-maroon sm:text-3xl md:text-4xl"
           >
             Wedding Reception Invitation
           </h1>
         </FadeInView>
 
-        <FadeInView delay={0.3}>
-          <p className="mx-auto mt-6 max-w-xl font-body text-lg leading-relaxed text-dark/85 sm:text-xl">
-            Solicit your gracious presence with family and friends on the occasion of the
-            reception of our son.
-          </p>
-        </FadeInView>
 
         {showPhotos && (
-          <FadeInView delay={0.4} className="mt-10">
+          <FadeInView delay={0.4} className="mt-12">
             <div className="flex items-end justify-center gap-4 sm:gap-8">
               {groomExists !== false && (
                 <div className="group relative">

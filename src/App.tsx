@@ -11,10 +11,11 @@ import { CountdownSection } from './sections/CountdownSection'
 import { EventDetailsSection } from './sections/EventDetailsSection'
 import { MapsSection } from './sections/MapsSection'
 import { GallerySection } from './sections/GallerySection'
-import { RsvpSection } from './sections/RsvpSection'
+// import { RsvpSection } from './sections/RsvpSection'
 import { CalendarSection } from './sections/CalendarSection'
 import { ShareSection } from './sections/ShareSection'
 import { FooterSection } from './sections/FooterSection'
+import { InvitationCard } from './components/InvitationCard'
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -47,11 +48,12 @@ export default function App() {
           <main className="relative z-10">
             <HeroSection />
             <CoupleSection />
+            <InvitationCard />
             <CountdownSection />
             <EventDetailsSection />
             <MapsSection />
             <GallerySection />
-            <RsvpSection />
+            {/* <RsvpSection /> */}
             <CalendarSection />
             <ShareSection />
             <FooterSection />

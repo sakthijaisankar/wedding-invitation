@@ -1,4 +1,4 @@
-export const GOOGLE_MAP_URL: string = 'PASTE_GOOGLE_MAP_LINK_HERE'
+export const GOOGLE_MAP_URL: string = 'https://maps.app.goo.gl/1VHqeF66cD5hPQa77'
 export const RSVP_FORM_URL: string = ''
 export const WHATSAPP_NUMBER: string = ''
 
@@ -51,6 +51,19 @@ export const CALENDAR_EVENT = {
   date: '5 July 2026',
   time: '6:00 PM',
   location: EVENT.locationShort,
+} as const
+
+export const INVITATION = {
+  blessing: 'Sri Murugan Thunai',
+  divineIntro: 'By the infinite grace of Lord Murugan,',
+  divineSubtext: 'whose divine blessings guide every auspicious beginning,',
+  host: 'Ms. Jayanthi Jaisankar,',
+  familyLine: 'along with her beloved family,',
+  inviteLines: [
+    'cordially invites you, your family, and your loved ones',
+    'to grace the Wedding Reception of her beloved son with your esteemed presence',
+    'and bless the couple with a lifetime of happiness, prosperity, and togetherness.',
+  ],
 } as const
 
 export const COLORS = {
