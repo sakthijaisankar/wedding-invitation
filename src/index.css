@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+@source '../index.html';
+@source './**/*.{js,ts,jsx,tsx}';
+
+@theme {
+  --color-maroon: #800020;
+  --color-gold: #d4af37;
+  --color-cream: #fff8f0;
+  --color-dark: #2b2b2b;
+
+  --font-heading: 'Cinzel Decorative', serif;
+  --font-body: 'Cormorant Garamond', serif;
+  --font-calligraphy: 'Great Vibes', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-cream);
+    color: var(--color-dark);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-gold) 40%, transparent);
+    color: var(--color-maroon);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+}
+
+@utility font-heading {
+  font-family: var(--font-heading);
+}
+
+@utility font-body {
+  font-family: var(--font-body);
+}
+
+@utility font-calligraphy {
+  font-family: var(--font-calligraphy);
+}
